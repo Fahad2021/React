@@ -25,28 +25,22 @@ function App() {
         {/* <h1>{2+3}</h1> */}
         {/* <p  style={style}>my name is: {person.name+" "+person.lastname}</p> */}
         {/* <p style={{backgroundColor:'cyan',color:'red'}}>my crush name is {person2.name+" "+person2.lastName}</p> */}
-        <Componet1 name="hi"></Componet1>
-        <Componet1></Componet1>
-        <Componet1></Componet1>
-        <Componet1></Componet1>
+       <Com name="lux"></Com>
+       <Com name="lifeboy"></Com>
+       <Com name="neem"></Com>
+       <Com name="alkatra"></Com>
       </header>
     </div>
   );
 }
-//create component
-function Componet1(props){
-  var cssStyle={
-    border:'2px solid red', 
-    margin:'3px',
-    background:'cyan'
-  }
+//create 
+function Com(props){
   // return(<div style={{border:'2px solid green', margin:'3px'}}>
-  return(<div style={cssStyle}>
-    <h1>Name:Fahad</h1>
-    <p>{props.name}</p>
-    <h2>my crus is jonaki</h2>
-    <p>she is also good girl</p>
-  
+  return(<div style={{border:'2px solid red',margin:'3px'}}>
+      <h1>{props.name} :this is component1</h1>
+      <h2>this is component2 {props.name}</h2>
+      <h3>this is component3</h3>
+      <h4>this is component4</h4>
   </div>
   )
 }
